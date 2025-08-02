@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://danah-kim.github.io/sitemap.xml
