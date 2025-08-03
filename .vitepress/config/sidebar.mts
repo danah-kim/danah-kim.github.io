@@ -23,6 +23,10 @@ const etcPosts = {
       text: 'Renovate 설정하기',
       link: '/posts/etc/setting-renovate',
     },
+    {
+      text: 'GitHub Actions를 활용하여 Slack App(Bot)에 메시지 전송하기',
+      link: '/posts/etc/making-slack-bot',
+    },
   ],
   collapsed: true,
 };
