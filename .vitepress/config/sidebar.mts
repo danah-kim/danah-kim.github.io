@@ -19,6 +19,10 @@ const etcPosts = {
       text: 'Python 3.10.x 설치하기',
       link: '/posts/etc/setting-python',
     },
+    {
+      text: 'Renovate 설정하기',
+      link: '/posts/etc/setting-renovate',
+    },
   ],
   collapsed: true,
 };
