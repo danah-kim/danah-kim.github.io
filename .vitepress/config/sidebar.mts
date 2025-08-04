@@ -8,7 +8,12 @@ const reactPosts = {
 
 const flutterPosts = {
   text: 'Flutter',
-  items: [],
+  items: [
+    {
+      text: 'Flutter 설치하기',
+      link: '/posts/flutter/install-flutter',
+    },
+  ],
   collapsed: true,
 };
 
