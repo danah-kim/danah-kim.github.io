@@ -13,6 +13,10 @@ const flutterPosts = {
       text: 'Flutter 설치하기',
       link: '/posts/flutter/install-flutter',
     },
+    {
+      text: 'Flavor로 Flutter 빌드 환경 분리하기',
+      link: '/posts/flutter/setup-flutter-flavors',
+    },
   ],
   collapsed: true,
 };

@@ -9,6 +9,7 @@ lastUpdated: false
 > Flutter
 
 - [Flutter 설치하기](/posts/flutter/install-flutter)
+- [Flavor로 Flutter 빌드 환경 분리하기](/posts/flutter/setup-flutter-flavors)
 
 > ETC
 
