@@ -17,6 +17,10 @@ const flutterPosts = {
       text: 'Flavor로 Flutter 빌드 환경 분리하기',
       link: '/posts/flutter/setup-flutter-flavors',
     },
+    {
+      text: 'Flutter 환경 별 Firebase 프로젝트 설정하기',
+      link: '/posts/flutter/setup-multiple-firebase-environments',
+    },
   ],
   collapsed: true,
 };
