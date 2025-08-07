@@ -21,6 +21,10 @@ const flutterPosts = {
       text: 'Flutter 환경 별 Firebase 프로젝트 설정하기',
       link: '/posts/flutter/setup-multiple-firebase-environments',
     },
+    {
+      text: 'Flutter 프로젝트에 GCP Secret Manager을 사용해서 환경변수 관리하기',
+      link: '/posts/flutter/setup-gcp-secret-manager',
+    },
   ],
   collapsed: true,
 };
