@@ -35,10 +35,10 @@ firebase use prod
 
 ```bash
 # 개발 환경
-flutterfire configure --output=firebase_options_dev.dart
+flutterfire configure --out=lib/firebase_options_dev.dart --project=PROJECT_ID
 
 # 운영 환경
-flutterfire configure --output=firebase_options_prod.dart
+flutterfire configure --out=lib/firebase_options_prod.dart --project=PROJECT_ID
 ```
 
 ### 2. Android 설정
@@ -128,12 +128,12 @@ android/
         "dev": {
           "projectId": "PROJECT_ID_DEV",
           "appId": "",
-          "fileOutput": "android/app/dev/google-services.json"
+          "fileOutput": "android/app/src/dev/google-services.json"
         },
         "prod": {
           "projectId": "PROJECT_ID_PROD",
           "appId": "",
-          "fileOutput": "android/app/prod/google-services.json"
+          "fileOutput": "android/app/src/prod/google-services.json"
         }
       },
       "ios": {
