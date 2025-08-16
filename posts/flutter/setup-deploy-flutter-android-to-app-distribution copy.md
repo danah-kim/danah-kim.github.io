@@ -43,6 +43,13 @@ fastlane init
 
 3-3 `Download existing metadata and setup metadata management? (y/n)`에서 `n` 입력 (이후 별도 세팅)
 
+Appfile
+
+```ruby
+json_key_file("fastlane/google-service-account.json")
+package_name("com.example.app.dev")
+```
+
 ## 4. Firebase App Distribution 업로드용 GCP Account 생성
 
 4-1. Firebase Console에서 `프로젝트 설정` → `서비스 계정` 이동
@@ -61,9 +68,9 @@ fastlane init
 
 4-8. `서비스 계정 키`를 다운받아 `/android/fastlane` 경로에 저장 후 파일 이름을 `google-service-account.json` 으로 변경(로컬 환경에서 fastlane 실행 시 사용하기 위함)
 
-4-9. gitignore 파일에 `google-service-account.json` 추가 (깃허브 레포지토리에 올리지 않기 위함)
+4-9. `.gitignore` 파일에 `google-service-account.json` 추가 (깃허브 레포지토리에 올리지 않기 위함)
 
-4-10. GitHub secrets에 Google Service Account JSON 파일 값을 `GOOGLE_SERVICE_ACCOUNT_DEV` 이름으로 추가
+4-10. `GitHub secrets`에 Google Service Account JSON 파일 내용을 `GOOGLE_SERVICE_ACCOUNT_DEV` 이름으로 추가
 
 ## 5. Fastlane에서 firebase distribution plugin 설치
 
@@ -138,7 +145,8 @@ jobs:
         run: brew install fastlane
 
       - name: 🔑 서비스 계정 키 파일 생성
-        run: echo "$GOOGLE_SERVICE_ACCOUNT_DEV" > android/fastlane/google-service-account.json
+        working-directory: android/fastlane
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_DEV" > agoogle-service-account.json
 
       - name: 🚀 Firebase App Distribution 배포
         working-directory: android

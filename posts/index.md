@@ -12,7 +12,8 @@ lastUpdated: false
 - [Flavor로 Flutter 빌드 환경 분리하기](/posts/flutter/setup-flutter-flavors)
 - [Flutter 환경 별 Firebase 프로젝트 설정하기](/posts/flutter/setup-multiple-firebase-environments)
 - [Flutter 프로젝트에 GCP Secret Manager을 사용해서 환경변수 관리하기](/posts/flutter/setup-gcp-secret-manager)
-- [Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기](/posts/flutter/setup-deploy-android)
+- [Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기](/posts/flutter/setup-deploy-flutter-android-to-app-distribution)
+- [Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Play Store 배포하기](/posts/flutter/setup-deploy-flutter-android-to-play-store)
 
 > ETC
 
