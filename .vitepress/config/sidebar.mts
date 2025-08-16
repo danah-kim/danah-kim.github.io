@@ -25,6 +25,10 @@ const flutterPosts = {
       text: 'Flutter 프로젝트에 GCP Secret Manager을 사용해서 환경변수 관리하기',
       link: '/posts/flutter/setup-gcp-secret-manager',
     },
+    {
+      text: 'Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기',
+      link: '/posts/flutter/setup-deploy-flutter-android-to-app-distribution',
+    },
   ],
   collapsed: true,
 };
