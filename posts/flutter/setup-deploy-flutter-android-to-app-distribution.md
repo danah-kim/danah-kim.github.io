@@ -47,7 +47,16 @@ Appfile
 
 ```ruby
 json_key_file("fastlane/google-service-account.json")
-package_name("com.example.app.dev")
+
+for_platform :ios do
+  for_lane :development do
+    package_name("com.example.app.dev")
+  end
+
+  for_lane :production do
+    package_name("com.example.app")
+  end
+end
 ```
 
 ## 4. Firebase App Distribution 업로드용 GCP Account 생성

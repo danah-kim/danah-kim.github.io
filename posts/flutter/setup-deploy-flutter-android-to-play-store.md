@@ -49,7 +49,16 @@ Appfile
 
 ```ruby
 json_key_file("fastlane/google-service-account.json")
-package_name("com.example.app")
+
+for_platform :android do
+  for_lane :development do
+    package_name("com.example.app.dev")
+  end
+
+  for_lane :production do
+    package_name("com.example.app")
+  end
+end
 ```
 
 ## 4. GCP에서 `Google Play Android Developer API` 사용 설정
@@ -136,16 +145,16 @@ android {
 
     signingConfigs {
         create("release") {
-            keyAlias = keystoreProperties["keyAlias"] as String
-            keyPassword = keystoreProperties["keyPassword"] as String
+            keyAlias = keystoreProperties["keyAlias"] as? String
+            keyPassword = keystoreProperties["keyPassword"] as? String
             storeFile = keystoreProperties["storeFile"]?.let { file(it) }
-            storePassword = keystoreProperties["storePassword"] as String
+            storePassword = keystoreProperties["storePassword"] as? String
         }
     }
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.getByName(project.property("target")?.toString()?.equals("lib/main_prod.dart") == true ? "release" : "debug")
         }
     }
 
