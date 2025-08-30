@@ -8,7 +8,6 @@ tags: [flutter, android, ci/cd]
 
 - fastlane: iOS 및 Android 앱의 빌드와 출시를 자동화하는 오픈소스 플랫폼
 - GitHub Actions: CI/CD 파이프라인을 자동화하는 플랫폼
-- Firebase App Distribution: 앱 배포 서비스
 
 ## 1. MAC 환경에서 Ruby 설치
 
@@ -49,10 +48,6 @@ Appfile
 json_key_file("fastlane/google-service-account.json")
 
 for_platform :ios do
-  for_lane :development do
-    package_name("com.example.app.dev")
-  end
-
   for_lane :production do
     package_name("com.example.app")
   end
@@ -165,5 +160,4 @@ jobs:
 
 ## 참고 문서
 
-- [Firebase fastlane을 사용하여 테스터에 iOS 앱 배포](https://firebase.google.com/docs/app-distribution/ios/distribute-fastlane)
 - [Flutter 프로젝트에서 Fastlane 사용하기](https://docs.flutter.dev/deployment/cd#fastlane)

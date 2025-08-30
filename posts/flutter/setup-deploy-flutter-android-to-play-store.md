@@ -51,10 +51,6 @@ Appfile
 json_key_file("fastlane/google-service-account.json")
 
 for_platform :android do
-  for_lane :development do
-    package_name("com.example.app.dev")
-  end
-
   for_lane :production do
     package_name("com.example.app")
   end
@@ -255,5 +251,5 @@ jobs:
 
 ## 참고 문서
 
-- [Firebase fastlane을 사용하여 테스터에 iOS 앱 배포](https://firebase.google.com/docs/app-distribution/ios/distribute-fastlane)
+- [Firebase fastlane을 사용하여 테스터에 Android 앱 배포](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane?hl=ko&_gl=1*9xx175*_up*MQ..*_ga*MTQ0NzM3MTc1LjE3NTY1NjMwODA.*_ga_CW55HF8NVT*czE3NTY1NjMwODAkbzEkZzAkdDE3NTY1NjMwODAkajYwJGwwJGgw)
 - [Flutter 프로젝트에서 Fastlane 사용하기](https://docs.flutter.dev/deployment/cd#fastlane)
