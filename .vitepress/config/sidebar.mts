@@ -33,6 +33,14 @@ const flutterPosts = {
       text: 'Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Play Store 배포하기',
       link: '/posts/flutter/setup-deploy-flutter-android-to-play-store',
     },
+    {
+      text: 'Flutter iOS 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기',
+      link: '/posts/flutter/setup-deploy-flutter-ios-to-app-distribution',
+    },
+    {
+      text: 'Flutter iOS 프로젝트 Fastlane과 GitHub Actions를 사용해서 Apple App Store 배포하기',
+      link: '/posts/flutter/setup-deploy-flutter-ios-to-app-app-store',
+    },
   ],
   collapsed: true,
 };

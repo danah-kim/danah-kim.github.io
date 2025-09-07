@@ -14,6 +14,8 @@ lastUpdated: false
 - [Flutter 프로젝트에 GCP Secret Manager을 사용해서 환경변수 관리하기](/posts/flutter/setup-gcp-secret-manager)
 - [Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기](/posts/flutter/setup-deploy-flutter-android-to-app-distribution)
 - [Flutter Android 프로젝트 Fastlane과 GitHub Actions를 사용해서 Play Store 배포하기](/posts/flutter/setup-deploy-flutter-android-to-play-store)
+- [Flutter iOS 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기](/posts/flutter/setup-deploy-flutter-ios-to-app-distribution)
+- [Flutter iOS 프로젝트 Fastlane과 GitHub Actions를 사용해서 Apple App Store 배포하기](/posts/flutter/setup-deploy-flutter-ios-to-app-app-store)
 
 > ETC
 
