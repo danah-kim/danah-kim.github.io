@@ -17,6 +17,10 @@ lastUpdated: false
 - [Flutter iOS 프로젝트 Fastlane과 GitHub Actions를 사용해서 Firebase App Distribution 배포하기](/posts/flutter/setup-deploy-flutter-ios-to-app-distribution)
 - [Flutter iOS 프로젝트 Fastlane과 GitHub Actions를 사용해서 Apple App Store 배포하기](/posts/flutter/setup-deploy-flutter-ios-to-app-app-store)
 
+> GCP
+
+- [GCP Cloud Storage와 Cloud CDN을 통해서 정적 에셋 관리하기](/posts/gcp/setup-assets-cloud-storage)
+
 > ETC
 
 - [Python 3.10.x 설치하기](/posts/etc/setting-python)

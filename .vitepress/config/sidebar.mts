@@ -45,6 +45,17 @@ const flutterPosts = {
   collapsed: true,
 };
 
+const gcpPosts = {
+  text: 'GCP',
+  items: [
+    {
+      text: 'GCP Cloud Storage와 Cloud CDN을 통해서 정적 에셋 관리하기',
+      link: '/posts/gcp/setup-assets-cloud-storage',
+    },
+  ],
+  collapsed: true,
+};
+
 const etcPosts = {
   text: 'ETC',
   items: [
@@ -68,7 +79,7 @@ export default function sidebar(): DefaultTheme.Sidebar {
   return {
     '/posts/': [
       {
-        items: [reactPosts, flutterPosts, etcPosts],
+        items: [reactPosts, flutterPosts, gcpPosts, etcPosts],
       },
     ],
   };
