@@ -224,7 +224,7 @@ jobs:
 
       - name: 🔑 서비스 계정 키 파일 생성
         working-directory: ios/fastlane
-        run: echo "$GOOGLE_SERVICE_ACCOUNT_DEV" > agoogle-service-account.json
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_DEV" > google-service-account.json
 
       - name: 📝 릴리즈 노트 생성
         shell: bash

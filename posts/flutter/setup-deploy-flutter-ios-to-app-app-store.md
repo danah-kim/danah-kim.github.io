@@ -245,11 +245,11 @@ jobs:
 
       - name: 🔑 서비스 계정 키 파일 생성
         working-directory: ios/fastlane
-        run: echo "$GOOGLE_SERVICE_ACCOUNT_DEV" > agoogle-service-account.json
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_DEV" > google-service-account.json
 
       - name: 🔑 App Store Connect API Key 파일 생성
         working-directory: ios/fastlane
-        run: echo "$APP_STORE_CONNECT_API_KEY" > agoogle-service-account.json
+        run: echo "$APP_STORE_CONNECT_API_KEY" > google-service-account.json
 
       - name: 🚀 App Store Connect 배포
         working-directory: ios
