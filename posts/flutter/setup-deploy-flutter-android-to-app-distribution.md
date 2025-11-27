@@ -47,7 +47,7 @@ Appfile
 ```ruby
 json_key_file("fastlane/google-service-account.json")
 
-for_platform :ios do
+for_platform :android do
   for_lane :production do
     package_name("com.example.app")
   end
@@ -84,7 +84,7 @@ fastlane add_plugin firebase_app_distribution
 
 ## 6. Fastfile 파일 수정
 
-설정 매개변수는 [Fastlane Firebase App Distribution Fastfile 설정](https://firebase.google.com/docs/app-distribution/ios/distribute-fastlane) 문서를 참고
+설정 매개변수는 [Fastlane Firebase App Distribution Fastfile 설정](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane) 문서를 참고
 
 ```ruby
 default_platform(:android)
